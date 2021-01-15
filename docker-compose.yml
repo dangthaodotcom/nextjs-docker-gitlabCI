@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    nextjs:
+        build: .
+        image: nextjs
+        container_name: nextjs
+        volumes:
+            - ./src:/usr/src/app
+        expose:
+            - "3000"
